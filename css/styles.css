@@ -59,7 +59,7 @@ body
   line-height:1.5;
   color:#212529;
   text-align:left;
-  background-color:#fff
+  background-color: #ffffff
 }
 
 [tabindex="-1"]:focus:not(:focus-visible)
@@ -395,7 +395,7 @@ h1,.h1
 
 h2,.h2
 {
-  font-size:3.5rem
+  font-size:3rem
 }
 
 h3,.h3
@@ -491,9 +491,11 @@ mark,.mark
 
 li.list-inline-item i:hover::before
 {
-  color: #000000;
+  color: #648c60;
 }
-
+li.list-inline-item i::before {
+  color: #495057;
+}
 .list-inline-item:not(:last-child)
 {
   margin-right:.5rem
@@ -3632,9 +3634,12 @@ input[type=submit].btn-block,input[type=reset].btn-block,input[type=button].btn-
   opacity:0
 }
 
-.collapse:not(.show)
+/*.collapse:not(.show)
 {
   display:none
+}*/
+.collapse {
+  display: none;
 }
 
 .collapsing
@@ -4936,10 +4941,6 @@ input[type=submit].btn-block,input[type=reset].btn-block,input[type=button].btn-
   display:inline-block;
   width:1.5em;
   height:1.5em;
-  vertical-align:middle;
-  content:"";
-  background:no-repeat center center;
-  background-size:100% 100%
 }
 
 @media (max-width: 575.98px) {
@@ -11692,7 +11693,7 @@ a.bg-dark:hover,a.bg-dark:focus,button.bg-dark:hover,button.bg-dark:focus
 
 .text-primary
 {
-  color:#2c332a!important
+  color: #657b5f !important
 }
 
 a.text-primary:hover,a.text-primary:focus
@@ -11890,7 +11891,8 @@ a.text-dark:hover,a.text-dark:focus
 
   .navbar
   {
-    display:none
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.5s linear;
   }
 
   .badge
@@ -11928,12 +11930,6 @@ a.text-dark:hover,a.text-dark:focus
     color:inherit;
     border-color:#dee2e6
   }
-}
-
-body
-{
-  padding-top:3.375rem;
-  color: #6c757d
 }
 
 @media (min-width: 992px) {
@@ -12081,5 +12077,24 @@ section.resume-section .resume-section-content
   }
 }
 .resume-section h2 {
-  color: #2c332a
+  color: #648c60
+}
+.sticky-icon {
+  height: 4vh;
+  width: 4vw;
+  position: sticky;
+  top: 50vh;
+  font-size: 3rem;
+  float: right;
+  text-align: center;
+  cursor: pointer;
+  color: #495057;
+}
+.print:hover {
+  color: #648c60;
+}
+@media print{
+  .noprint {
+    visibility: hidden;
+  }
 }

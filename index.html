@@ -10,14 +10,14 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link href="assets/fa/fontawesome-free-5.14.0-web/css/all.css" rel="stylesheet"> <!--load all styles -->
     </head>
-    <body id="page-top" onload="highlightElements()">
+    <div id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand" href="#page-top">
                 <span class="d-block d-lg-none">Damian Sieradzki</span>
                 <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="Damian Sieradzki" /></span>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <button class="navbar-toggler" type="button" onclick="toggle()"><i class="fas fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
@@ -28,6 +28,11 @@
                 </ul>
             </div>
         </nav>
+    </div>
+    <div class="sticky-icon noprint">
+        <i class="fas fa-adjust print" onclick="switchLight()"></i>
+        <i class="fas fa-print print" onclick="window.print()"></i>
+        </div>
         <!-- Page Content-->
         <div class="container-fluid p-0">
             <!-- About-->
@@ -42,8 +47,8 @@
                         <a href="mailto:sieradzki129@gmail.com">sieradzki129@gmail.com</a>
                     </div>
                     <p class="lead mb-5">I have about 1 years of experience in software development as Web Developer and Software Engineer in banking industry. I got experience with new functionalities and maintenance software. Last months I worked in Scrum teams in projects concerning banking website and integrate them with internal systems. I am oriented for further development as Front-end Developer</p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://github.com/Presi129" target="_blank"><i class="fab fa-github"></i></a>
+                    <div class="social-icons noprint">
+                        <a class="social-icon" href="https://github.com/sieradzkidamian" target="_blank"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </section>
@@ -137,6 +142,8 @@
                         <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
                         <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
                         <li class="list-inline-item"><i class="fab fa-npm"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-bootstrap"></i></li>
+
                     </ul>
                     <div class="subheading mb-3">Workflow</div>
                     <ul class="fa-ul mb-0">
