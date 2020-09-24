@@ -17,15 +17,15 @@ function toggle() {
 }
 
 function switchLight() {
-
-
-    if (document.body.style.backgroundColor === "#ffffff") {
-        document.body.style.backgroundColor = "#18191A";
+    const body = document.querySelector('body');
+    if (body.classList.contains('body-light')) {
+        body.classList.remove('body-light')
+        body.classList.add('body-dark');
     }
     else {
-        document.body.style.backgroundColor = "#ffffff";
+        body.classList.add('body-light');
+        body.classList.remove('body-dark');
     }
 }
-
 
 

@@ -12098,3 +12098,11 @@ section.resume-section .resume-section-content
     visibility: hidden;
   }
 }
+.body-dark {
+  background: #18191A;
+  color: #6b6b6b;
+}
+.body-light {
+  color:#212529;
+  background-color: #ffffff
+}
