@@ -12106,3 +12106,12 @@ section.resume-section .resume-section-content
   color:#212529;
   background-color: #ffffff
 }
+@media only screen and (max-width: 600px) {
+  body {
+    width: 90vw;
+    max-width: 100%;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+}
